@@ -1,0 +1,283 @@
+@font-face{
+    font-family: Pais;
+    src: url(local);
+}
+
+body {
+    background-color: #F2F2F2;
+    /*font-family: "Noto Sans", sans-serif;*/
+    font-family: Pais;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+blockquote {
+    font-style: italic;
+    text-align: center;
+    font-size: 20px;
+}
+
+h1 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 64px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.text-title {
+    margin-top: 40px;
+}
+
+.container {
+    max-width: 1340px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.text_container {
+    width: 925px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #0D0D0D;
+    width: 100vw;
+}
+
+.header_banner {
+    margin-bottom: 20px;
+    width: 65%;
+    height: auto;
+    margin-top: 100px;
+    text-align: center;
+    margin-left: 17%;
+}
+
+.nav {
+    margin-bottom: 20px;
+    top: 0;
+    left:0;
+    position: fixed;
+    background-color: #131417;
+    display: flex;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav_link {
+    color: #F2F2F2;
+    padding: 20px 30px;
+    display: inline-block;
+}
+
+.nav_link:hover {
+    background-color: #131417;
+    color: #CDCCCC;
+}
+
+.specific_title {
+    padding: 10px 0px;
+    background-color: #0D0D0D;
+    color: #F2F2F2;
+    margin: 40px 0;
+}
+
+.specific_title > * {
+    color: #F2F2F2;
+    text-align: center;
+}
+
+.genres_list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 35px;
+    gap: 15px;
+}
+
+.geners_list_item {
+    width: 30%;
+    background-color: #1C1C1C;
+    padding: 10px;
+    color: #FFFFFF;
+}  
+
+.geners_description {
+    text-align: center;
+}
+
+.geners_img {
+    width: 100%;
+}
+
+.text_two_column {
+    display: flex;
+    gap: 25px;
+}
+
+.photo_discription {
+    text-align: center;
+}
+
+.kinotherapia {
+    background-color: #0D0D0D;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.film_cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filmstrip > h2, .filmstrip > h4 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.filmstrip > h2 {
+    font-size: 25px;
+}
+
+.filmstrip > h4 {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.filmstip_list {
+    background-image: url('../img/Exclude.svg');
+    background-repeat: repeat-x;
+    background-position-x: center;
+    padding: 135px 0px;
+}
+
+.card {
+    width: 325px;
+    height: 480px;
+    perspective: 1000px;
+}
+
+.card .front, .card .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+}
+
+.card .front {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+.card .back {
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    border: 1px solid #ccc;
+}
+
+.card.flipped .front {
+    transform: rotateY(180deg);
+}
+
+.card.flipped .back {
+    transform: rotateY(360deg);
+}
+
+.movie-title {
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+    margin: 0;
+    position: absolute;
+    top: -40px;
+    left: -20px;
+}
+
+.movie-details {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.original-title {
+    font-weight: bold;
+}
+
+.year {
+    float: right;
+    font-weight: bold;
+}
+
+.director {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: #0D0D0D;
+    color: #CDCCCC;
+    padding: 67px 0;
+    margin-top: 150px;
+}
+
+.footer > h2 {
+    margin: 0;
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    background-color: #0D0D0D;
+    padding: 10px;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger_line {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 3px;
+}
+
+.nav_list {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_list_item {
+    margin-left: 20px;
+}
+
+.nav_link {
+    color: white;
+    text-decoration: none;
+}
